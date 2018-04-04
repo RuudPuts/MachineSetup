@@ -1,0 +1,32 @@
+# Note: The the scripts are not prepared for the path below to contain any whitespaces
+# If you use whitespaces in a folder, by now you should feel bad.
+DEV_FOLDER="~/"
+
+# At time of writing 2fa is not supported, please see https://github.com/KrauseFx/xcode-install/issues/249
+APPSTORE_EMAIL="johndoe@apple.com"
+APPSTORE_PASSWORD="TimCook<3"
+
+XCODE_VERSION=9.1
+RUBY_VERSION=2.3.4
+
+# See the backup folder in case you've used backup.sh to fill the arrays below
+declare -a APPS=('The Unarchiver' '1Password')
+declare -a GEMS=('bundler')
+declare -a FORMULAS=('curl')
+
+declare -a OTHER_APPS=('https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg')
+
+# Below this is for backup only
+
+declare -a PREFERENCES=('com.apple.dock.plist' \
+	'com.apple.finder.plist' \
+	'com.apple.systempreferences.plist' \
+	'com.apple.print.PrinterProxy.plist' \
+	'com.apple.print.custompresets.forprinter.*.plist' \
+	'com.apple.menuextra.clock.plist' \
+	'com.apple.menuextra.battery.plist' \
+	'com.apple.systemuiserver.plist' \
+	'com.apple.universalaccess.plist' \
+	'com.apple.dt.Xcode.plist' \
+	'com.sublimetext.3.plist' \
+	'com.googlecode.iterm2.plist')
